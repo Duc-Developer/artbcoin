@@ -1,10 +1,29 @@
 #main-navbar {
     padding: 25px 25px;
 
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .navbar-toggler {
         border-color: transparent;
-        .navbar-toggler-icon {
-            font-size: 26px;
+        img {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    .nav-item {
+        text-align: left;
+        a {
+            color: #111111;
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
         }
     }
 }
