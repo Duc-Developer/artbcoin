@@ -27,3 +27,34 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    #main-navbar {
+        padding: 22px 119px 22px 110px;
+
+        .collapse.navbar-collapse {
+            min-width: 320px;
+            justify-content: flex-end;
+            .nav-item {
+                margin-left: 33px;
+            }
+        }
+
+        .nav-item {
+            text-align: left;
+            a {
+                font-family: Noto Sans KR;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                color: #777777;
+            }
+        }
+        .nav-item.active {
+            a {
+                color: #000000;
+            }
+        }
+    }
+}

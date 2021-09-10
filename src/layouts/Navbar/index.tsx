@@ -27,7 +27,7 @@ const MainNavbar: React.FC = () => {
             </div>
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
-                    <NavItem>
+                    <NavItem active>
                         <NavLink href="#">지갑</NavLink>
                     </NavItem>
                     <NavItem>
