@@ -73,4 +73,28 @@
             }
         }
     }
+
+    .list__image {
+        padding: 30px 16px 80px 16px;
+    }
+
+    .showmore__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+        margin-bottom: 50px;
+        button {
+            padding: 14px 36px;
+            font-family: Noto Sans KR;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+
+            color: #8c8c8c;
+            background-color: transparent;
+            border: 1px solid #8c8c8c;
+        }
+    }
 }

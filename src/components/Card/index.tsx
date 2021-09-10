@@ -1,25 +1,34 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
+import './style.scss';
 
-const CustomCard: React.FC = () => {
-    return (
-        <div>
-            <Card>
-                <CardBody>
-                    <CardTitle tag="h5">Card title</CardTitle>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                        Card subtitle
-                    </CardSubtitle>
-                </CardBody>
-                <img src="https://picsum.photos/318/180" alt="" />
-                <CardBody>
-                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                    <CardLink href="#">Card Link</CardLink>
-                    <CardLink href="#">Another Link</CardLink>
-                </CardBody>
-            </Card>
-        </div>
-    );
+export type CardType = 'primary' | 'secondary';
+
+const CustomCard = ({ cardType }: { cardType: CardType }) => {
+    switch (cardType) {
+        case 'primary':
+            return (
+                <div className="card__wrapper primary">
+                    <div className="card__image"></div>
+                    <div className="card__content">
+                        <h6>컬렉션 작품</h6>
+                        <h5>작품명 소개</h5>
+                        <p>작품명 소개자리입니다.</p>
+                    </div>
+                </div>
+            );
+        case 'secondary':
+            return (
+                <div className="card__wrapper secondary">
+                    <div className="card__image"></div>
+                    <div className="card__content">
+                        <h5>작품명 소개</h5>
+                        <p>작품명 소개자리입니다.</p>
+                    </div>
+                </div>
+            );
+        default:
+            return <></>;
+    }
 };
 
 export default CustomCard;

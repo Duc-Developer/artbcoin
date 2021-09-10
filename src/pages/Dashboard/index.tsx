@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import CustomCard from 'components/Card';
+import { Container } from 'reactstrap';
 import DashboardBanner from './Banner';
 import DashboardContent from './Content';
 

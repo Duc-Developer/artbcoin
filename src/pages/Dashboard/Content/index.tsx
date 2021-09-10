@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CustomCard from 'components/Card';
 import './style.scss';
+import { Col, Row } from 'reactstrap';
 
+const fakeDataShowmore = [1, 2, 3, 4, 5, 6, 7, 8];
 function DashboardContent() {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     return (
         <div className="dashboard-content">
             <div className="portfolio">
@@ -29,7 +33,32 @@ function DashboardContent() {
                     </div>
                 </div>
             </div>
-            {/* images */}
+            <div className="list__image">
+                <Row>
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                        <Col key={i.toString()} md="4" xs="6">
+                            <CustomCard cardType="primary" />
+                        </Col>
+                    ))}
+                </Row>
+                <div className="showmore__btn">
+                    <button
+                        onClick={() => {
+                            setIsOpen(!isOpen);
+                        }}
+                    >
+                        작품 더보기
+                    </button>
+                </div>
+                <Row>
+                    {isOpen &&
+                        fakeDataShowmore.map((i) => (
+                            <Col key={i} md="3" xs="6">
+                                <CustomCard cardType="secondary" />
+                            </Col>
+                        ))}
+                </Row>
+            </div>
         </div>
     );
 }
