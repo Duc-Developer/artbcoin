@@ -1,0 +1,126 @@
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 370px;
+
+    background: rgba(0, 0, 0, 0.1);
+    background-image: url(../../../assets/images/dashboard-main-banner.png);
+    background-size: cover;
+
+    h1 {
+        position: absolute;
+        width: 220px;
+        height: 74px;
+        left: 16px;
+        top: 117px;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 37px;
+        text-align: left;
+
+        color: #ffffff;
+    }
+
+    p {
+        position: absolute;
+        width: 199px;
+        height: 44px;
+        left: 16px;
+        top: 205px;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+
+        color: rgba(255, 255, 255, 0.92);
+    }
+
+    .button-group {
+        width: 100%;
+        position: absolute;
+        bottom: -29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            height: 58px;
+            color: #ffffff;
+            background: #000000;
+        }
+
+        button:first-child {
+            width: 109px;
+            border-radius: 5px 0px 0px 5px;
+        }
+        button:nth-child(2) {
+            width: 110px;
+            border-radius: 0px;
+        }
+        button:last-child {
+            width: 109px;
+            border-radius: 0px 5px 5px 0px;
+        }
+    }
+}
+
+.sub-banner {
+    position: relative;
+    margin: 59px 16px 20px 16px;
+
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100px;
+    border-radius: 5px;
+
+    background: #e64724;
+
+    .sub-banner__text {
+        margin-left: 21px;
+
+        h3 {
+            height: 22px;
+            margin-bottom: 0;
+            font-family: Noto Sans KR;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            /* identical to box height, or 147% */
+
+            color: #ffffff;
+        }
+
+        p {
+            height: 22px;
+            margin-bottom: 0;
+            font-family: Noto Sans KR;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 22px;
+
+            color: #ffffff;
+        }
+    }
+
+    .sub-banner__img {
+        position: absolute;
+        border-radius: 100%;
+        top: -63px;
+        right: -53px;
+
+        background-image: url(../../../assets/images/eberhard-grossgasteiger-5P91SF0zNsI-unsplash.png);
+        background-size: contain;
+        background-position: center;
+
+        width: 180px;
+        height: 180px;
+    }
+}
