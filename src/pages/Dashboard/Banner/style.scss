@@ -124,3 +124,132 @@
         height: 180px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .main-banner {
+        height: 556px;
+        background-image: url(../../../assets/images/dashboard-main-banner.png);
+
+        h1 {
+            width: 529px;
+            height: 136px;
+            left: 197px;
+            top: 235px;
+
+            font-family: Noto Sans KR;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 68px;
+
+            display: flex;
+            align-items: center;
+
+            color: #ffffff;
+        }
+
+        p {
+            width: 298px;
+            height: 64px;
+            left: 197px;
+            top: 389px;
+
+            font-family: Noto Sans KR;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 32px;
+            /* or 152% */
+
+            display: flex;
+            align-items: center;
+
+            color: rgba(255, 255, 255, 0.92);
+        }
+        .button-group {
+            bottom: -48px;
+            button {
+                position: relative;
+                height: 96px;
+                text-align: left;
+                font-family: Noto Sans KR;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 22px;
+                padding: 37px 50px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 38px;
+                    right: 50px;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+
+                    border-left: 10px solid #ffffff;
+                }
+            }
+            button:first-child {
+                width: 400px;
+            }
+            button:nth-child(2) {
+                width: 400px;
+            }
+            button:last-child {
+                width: 400px;
+            }
+        }
+    }
+
+    .sub-banner {
+        position: relative;
+        margin: 108px 120px 60px 120px;
+
+        height: 299px;
+        border-radius: 5px;
+
+        background: #e64724;
+
+        .sub-banner__text {
+            margin-left: 77px;
+
+            h3 {
+                font-family: Noto Sans KR;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 22px;
+                text-align: left;
+
+                color: #ffffff;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-family: Noto Sans KR;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 22px;
+                text-align: left;
+
+                color: #ffffff;
+            }
+        }
+
+        .sub-banner__img {
+            position: absolute;
+            border-radius: 100%;
+            top: -565px;
+            right: -269px;
+
+            background-image: url(../../../assets/images/eberhard-grossgasteiger-5P91SF0zNsI-unsplash.png);
+            background-size: contain;
+            background-position: bottom;
+
+            width: 970px;
+            height: 970px;
+        }
+    }
+}
