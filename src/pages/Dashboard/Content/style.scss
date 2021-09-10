@@ -17,7 +17,60 @@
 
         .portfolio__text {
             color: #ffffff;
-            text-align: left;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            padding-top: 40px;
+
+            .text__box {
+                width: 100%;
+                color: #ffffff;
+
+                h6 {
+                    font-family: Noto Sans KR;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+
+                    color: #ffffff;
+                    margin-bottom: 7px;
+                }
+
+                p {
+                    font-family: Noto Sans KR;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+
+                    color: #c4c4c4;
+                    margin-bottom: 30px;
+                }
+
+                h6,
+                p {
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+
+            .text__box:first-child {
+                h6 {
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 22px;
+
+                    color: #ffffff;
+                }
+                p {
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #ffffff;
+                }
+            }
         }
     }
 }
