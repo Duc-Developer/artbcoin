@@ -1,0 +1,34 @@
+#footer {
+    width: 100%;
+    height: 156px;
+    margin-bottom: 23px;
+
+    background-color: #111111;
+
+    .footer__logo {
+        margin-left: 16px;
+        text-align: left;
+        img {
+            margin-top: 30px;
+            width: 74px;
+            height: 24px;
+        }
+    }
+
+    .text__box {
+        margin-top: 20px;
+        margin-left: 16px;
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+
+            text-align: left;
+            margin-bottom: 5px;
+
+            color: #8c8c8c;
+        }
+    }
+}

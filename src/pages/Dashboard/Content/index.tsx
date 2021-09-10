@@ -50,14 +50,15 @@ function DashboardContent() {
                         작품 더보기
                     </button>
                 </div>
-                <Row>
-                    {isOpen &&
-                        fakeDataShowmore.map((i) => (
+                {isOpen && (
+                    <Row style={{ marginTop: '50px' }}>
+                        {fakeDataShowmore.map((i) => (
                             <Col key={i} md="3" xs="6">
                                 <CustomCard cardType="secondary" />
                             </Col>
                         ))}
-                </Row>
+                    </Row>
+                )}
             </div>
         </div>
     );
