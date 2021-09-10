@@ -1,0 +1,23 @@
+.dashboard-content {
+    .portfolio {
+        padding: 20px 16px 70px 16px;
+
+        background: #2d2a26;
+
+        .portfolio__img {
+            width: auto;
+            min-height: 190px;
+
+            background: #4f4b48;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .portfolio__text {
+            color: #ffffff;
+            text-align: left;
+        }
+    }
+}
