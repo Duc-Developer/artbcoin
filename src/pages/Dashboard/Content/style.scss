@@ -98,3 +98,58 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .dashboard-content {
+        .portfolio {
+            padding: 88px 120px;
+
+            .portfolio__img {
+                width: 600px;
+                height: 400px;
+            }
+
+            .portfolio__text {
+                margin-left: 60px;
+
+                .text__box {
+                    h6 {
+                        font-family: Noto Sans KR;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #ffffff;
+                    }
+
+                    p {
+                        font-family: Noto Sans KR;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 22px;
+                        width: 347px;
+
+                        color: #c4c4c4;
+
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .text__box:first-child {
+                    h6 {
+                        font-weight: bold;
+                        font-size: 26px;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-bottom: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
